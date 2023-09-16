@@ -17,6 +17,8 @@
             <th style="color:red;">First Name</th>
             <th style="color:red;">Last Name</th>
             <th style="color:red;">Age</th>
+            <th style="color:red;">Update</th>
+            <th style="color:red;">Delete</th>
 
             <?php
             $query = "select * from student";
@@ -34,6 +36,8 @@
                         <th><?php echo $row['first_name']; ?></th>
                         <th><?php echo $row['last_name']; ?></th>
                         <th><?php echo $row['age']; ?></th>
+                        <th><a href="Update.php?id=<?php echo $row['id']; ?>" class="btn btn-success">Update</a></th>
+                        <th><a href="Delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></th>
                     </tr>
 
             <?php
