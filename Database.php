@@ -1,22 +1,13 @@
-<?php 
+<?php
 
-define("HOSTNAME", "localhost" );
-define("USERNAME", "root" );
-define("PASSWORD", "123456" );
-define("DATABASE", "crud_operation" );
+define("HOSTNAME", "localhost");
+define("USERNAME", "root");
+define("PASSWORD", "123456");
+define("DATABASE", "crud_operation");
 
-$connection = mysqli_connect(HOSTNAME,USERNAME,PASSWORD,DATABASE);
+$connection = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
 
-if(!$connection){
+if (!$connection) {
     die("Connection failed");
-}else{
-    echo "you are connected to database";
 }
-
-
-
-
-
-
-
 ?>
