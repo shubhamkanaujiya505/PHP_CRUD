@@ -58,6 +58,11 @@
         echo "<h6>" . $_GET['insert_message'] . "</h6>";
     }
     ?>
+    <?php
+    if (isset($_GET['update_msg'])) {
+        echo "<h6>" . $_GET['update_msg'] . "</h6>";
+    }
+    ?>
     <form action="insert_data.php" method="post">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
